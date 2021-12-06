@@ -22,6 +22,7 @@
   --first-color-logo: #2196f3;
   --second-color-logo: #000000;
   --third-color-logo: #ffffff;
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *,
@@ -162,7 +163,7 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--timing-function);
 }
 
 .header-social-icon {
@@ -206,7 +207,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--timing-function);
 }
 
 .header-social-link:not(:first-child) {
@@ -423,8 +424,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: fill 250ms linear, background-color 250ms linear,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--timing-function),
+    background-color var(--timing-function);
 }
 
 .team-social-link:hover,
@@ -439,8 +440,8 @@ body {
 
 .team-social-icon {
   fill: #afb1b8;
-  transition: fill 250ms linear, background-color 250ms linear,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--timing-function),
+    background-color var(--timing-function);
 }
 
 /*-------------------clients---------------------*/
@@ -472,8 +473,7 @@ body {
   justify-content: center;
   outline: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms linear, outline 250ms linear,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function), outline var(--timing-function);
 }
 
 .clients-social-item {
@@ -486,8 +486,7 @@ body {
 }
 .clients-social-icon {
   fill: #afb1b8;
-  transition: fill 250ms linear, outline 250ms linear,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function), outline var(--timing-function);
 }
 
 .clients-social-link:hover .clients-social-icon,
@@ -540,8 +539,8 @@ body {
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
   display: inline-block;
-  transition: color 250ms linear, background-color 250ms linear,
-    box-shadow 250ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function),
+    background-color var(--timing-function), box-shadow var(--timing-function);
 }
 
 /*-------------------- portfolio -----------------*/
@@ -561,7 +560,7 @@ body {
   margin-right: 30px;
   margin-bottom: 37px;
   border: 1px solid #eeeeee;
-  transition: box-shadow 250ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--timing-function);
 }
 
 .portfoloi-item:hover .portfolio-top-text {
@@ -661,7 +660,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 250ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function);
 }
 
 .footer-social-link {
@@ -671,7 +670,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color 250ms linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function);
 }
 
 .footer-social-link:hover,
@@ -718,8 +717,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: fill 250ms linear, background-color 250ms linear,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--timing-function),
+    background-color var(--timing-function);
 }
 
 .footer-social-contacts:hover,
@@ -735,4 +734,45 @@ body {
 .footer-social-contacts {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+}
+
+/* -------------modal------------------------*/
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
