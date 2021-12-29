@@ -694,6 +694,57 @@ body {
   padding-bottom: 20px;
 }
 
+.subscription-box {
+  margin-left: 93px;
+}
+
+.subscription-field {
+  display: flex;
+  align-items: center;
+}
+
+.subscription {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding: 16px 15px;
+}
+
+.subscription-text {
+  color: var(--footer-first-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscription-button {
+  color: var(--button-header-color);
+  background-color: var(--header-bg-button);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 29px 10px 28px;
+}
+
+.subscription-icon {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
 .footer-list {
   display: flex;
   align-self: center;
@@ -755,6 +806,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .modal-close {
@@ -771,8 +823,159 @@ body {
   justify-content: center;
 }
 
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-titel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-form-input:focus,
+.modal-form-input:hover {
+  border-color: var(--accent-color);
+}
+
+.modal-form-input:focus + .modal-icon,
+.modal-form-input:hover + .modal-icon {
+  fill: var(--accent-color);
+}
+.modal-form-text:focus,
+.modal-form-text:hover {
+  border-color: var(--accent-color);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--timing-function);
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-right: 12px;
+  outline: none;
+  transition: fill var(--timing-function);
+}
+
+.modal-form-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  outline: none;
+}
+
+.modal-form-text::placeholder {
+  font-style: 500;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-titel {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--second-titel-color);
+}
+
+.check-text {
+  font-style: 500;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: flex;
+}
+
+.check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  margin-right: 8.38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon {
+  fill: #ffffff;
+}
+
+.modal-check:checked + .check-text .check-item {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.label-blu {
+  font-style: 500;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--header-accent-color);
+  padding-left: 2px;
+}
+
+.modal-button {
+  color: var(--button-header-color);
+  background-color: var(--header-bg-button);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  display: block;
+  margin: 0px auto;
 }
