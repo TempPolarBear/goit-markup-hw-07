@@ -48,6 +48,7 @@ ul {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 img {
@@ -185,7 +186,7 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bg.jpg);
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -358,13 +359,13 @@ body {
 .team-item {
   background-color: var(--first-bg-color);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.team-item:not(4n) {
-  margin-left: 0px;
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-item-bottom {
@@ -634,7 +635,7 @@ body {
 .footer-container {
   display: flex;
   align-items: center;
-  padding: 1px;
+  padding: 0px 15px 0px 15px;
 }
 
 .footer-logo {
@@ -696,6 +697,7 @@ body {
 
 .subscription-box {
   margin-left: 93px;
+  margin-right: 0px;
 }
 
 .subscription-field {
@@ -704,6 +706,7 @@ body {
 }
 
 .subscription {
+  color: var(--second-titel-color);
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -821,6 +824,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: fill var(--timing-function);
 }
 
 .modal-close:hover,
@@ -913,12 +917,14 @@ body {
 }
 
 .check-text {
+  color: var(--second-titel-color);
   font-style: 500;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   display: flex;
+  align-items: center;
 }
 
 .check-item {
@@ -978,4 +984,6 @@ body {
   margin-top: 30px;
   display: block;
   margin: 0px auto;
+  width: 200px;
+  height: 50px;
 }
