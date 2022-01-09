@@ -48,10 +48,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--header-accent-color);
-  }
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--header-accent-color);
 }
 
 .join-box {
@@ -130,10 +131,9 @@
 .footer-social-item {
   width: 44px;
   height: 44px;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
+  & + .footer-social-item {
+    margin-left: 10px;
+  }
 }
 
 .footer-social-contacts {
@@ -152,12 +152,11 @@
   }
 }
 
-.footer-social-contacts:hover .footer-social-contacts,
-.footer-social-contacts:focus .footer-social-contacts {
-  fill: var(--button-second-color);
-}
-
 .footer-social-contacts {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+  &:hover .footer-social-contacts,
+  &:focus .footer-social-contacts {
+    fill: var(--button-second-color);
+  }
 }
