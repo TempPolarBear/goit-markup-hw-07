@@ -29,14 +29,14 @@
   text-transform: uppercase;
 }
 
-.hero-item {
+.hero-list__item {
   flex-basis: 270px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.hero-text {
+.hero-list__text {
   color: var(--second-titel-color);
   font-weight: 400;
   font-size: 14px;

@@ -11,14 +11,14 @@
   align-self: center;
 }
 
-.about-item {
+.about-list__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.about-product {
+.about-list__product {
   position: absolute;
   width: 100%;
   left: 0;

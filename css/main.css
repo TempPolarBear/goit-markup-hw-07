@@ -432,15 +432,15 @@ body {
   text-transform: uppercase;
 }
 
-.hero-item {
+.hero-list__item {
   flex-basis: 270px;
 }
 
-.hero-item:not(:last-child) {
+.hero-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.hero-text {
+.hero-list__text {
   color: var(--second-titel-color);
   font-weight: 400;
   font-size: 14px;
@@ -465,15 +465,15 @@ body {
   align-self: center;
 }
 
-.about-item {
+.about-list__item {
   position: relative;
 }
 
-.about-item:not(:last-child) {
+.about-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-product {
+.about-list__product {
   position: absolute;
   width: 100%;
   left: 0;
