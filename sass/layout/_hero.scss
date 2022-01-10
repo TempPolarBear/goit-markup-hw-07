@@ -8,10 +8,6 @@
   align-items: center;
 }
 
-.hero-list {
-  display: flex;
-}
-
 .hero-list__bottom {
   background-color: var(--third-bg-color);
   width: 270px;
@@ -46,4 +42,8 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.hero-list {
+  display: flex;
 }

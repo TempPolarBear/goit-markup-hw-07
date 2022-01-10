@@ -6,6 +6,16 @@
   align-self: center;
 }
 
+.about-titel {
+  color: var(--first-titel-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 .about-list {
   display: flex;
   align-self: center;
@@ -35,14 +45,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.about-titel {
-  color: var(--first-titel-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }

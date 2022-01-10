@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.clients-text {
+.clients-list__text {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -17,7 +17,7 @@
   justify-content: center;
 }
 
-.clients-social-link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -30,13 +30,13 @@
   &:hover {
     outline: 1px solid #2196f3;
   }
-  &:hover .clients-social-icon,
-  &:focus .clients-social-icon {
+  &:hover .clients-list__icon,
+  &:focus .clients-list__icon {
     fill: var(--accent-color);
   }
 }
 
-.clients-social-item {
+.clients-list__item {
   width: 170px;
   height: 92px;
   &:not(:last-child) {
@@ -44,7 +44,7 @@
   }
 }
 
-.clients-social-icon {
+.clients-list__icon {
   fill: #afb1b8;
   transition: color var(--timing-function), outline var(--timing-function);
 }

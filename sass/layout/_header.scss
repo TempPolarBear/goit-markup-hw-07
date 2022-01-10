@@ -35,7 +35,7 @@
   letter-spacing: 0.03em;
 }
 
-.header-item {
+.header-list__item {
   display: inline-flex;
   align-items: center;
   &:not(:last-child) {
@@ -65,7 +65,7 @@
   justify-content: center;
 }
 
-.header-social-link {
+.header-list__link {
   position: relative;
   color: var(--header-second-text);
   font-weight: 500;
@@ -79,13 +79,14 @@
   &:focus {
     color: var(--header-accent-color);
   }
+  &:hover .header-contact__icon,
+  &:focus .header-contact__icon {
+    fill: var(--header-accent-color);
+  }
 }
 
-.header-social-icon {
+.header-contact__icon {
   margin-right: 10px;
-}
-
-.header-social-icon {
   fill: #afb1b8;
 }
 
@@ -111,27 +112,23 @@
   text-align: center;
 }
 
-.header-social-link {
+.header-contact__link {
   color: var(--header-contact);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: var(--timing-function);
-  &:not(:first-child) {
-    margin-left: 50px;
-  }
   &:hover,
   &:focus {
     color: var(--header-accent-color);
   }
-  &:hover .header-social-icon,
-  &:focus .header-social-icon {
-    fill: var(--header-accent-color);
+  &:not(:first-child) {
+    margin-left: 50px;
   }
 }
 
-.header-section-element {
+.header-section__element {
   color: var(--header-text);
   font-weight: 900;
   font-size: 44px;
@@ -142,7 +139,7 @@
   margin: 0 auto;
 }
 
-.header-button {
+.header-section__button {
   color: var(--button-header-color);
   background-color: var(--header-bg-button);
   font-family: Roboto;

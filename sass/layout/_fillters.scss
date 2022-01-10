@@ -8,11 +8,11 @@
   justify-content: center;
 }
 
-.fillters-item:not(:last-child) {
+.fillters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.fillters-button {
+.fillters-list__button {
   background-color: var(--button-second-color);
   color: var(--button-color-text);
   font-family: Roboto;
